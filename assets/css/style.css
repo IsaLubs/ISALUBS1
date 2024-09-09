@@ -762,9 +762,6 @@ section {
   .about .about-img img {
     max-width: 90%;
   }
-  .about-para {
-  margin-bottom: 40px; /* or any value that fits your design */
-}
 }
 
 /*--------------------------------------------------------------
@@ -1067,5 +1064,15 @@ section {
     -moz-text-align-last: center;
     text-align-last: center;
     padding: 3px 0;
+  }
+}
+.about-para {
+  margin-bottom: 40px; /* Default margin for larger screens */
+}
+
+/* Media query for small screens (mobile devices) */
+@media (max-width: 768px) {
+  .about-para {
+    margin-bottom: 20px; /* Smaller margin for mobile devices */
   }
 }
